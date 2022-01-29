@@ -11,7 +11,7 @@ We will see the steps to download and install Ubuntu on a machine.
 
 ## Install OpenCV in Ubuntu
 
-- <b>For Windows:</b> You have to see [this website](https://askubuntu.com/questions/142695/what-are-the-pros-and-cons-of-having-a-separate-home-partition)
+- <b>For Windows:</b> You have to see [this website](https://towardsdatascience.com/install-and-configure-opencv-4-2-0-in-windows-10-vc-d132c52063a1)
 - Note that it is OpenCV Website -> Library -> Releases and not Resources -> Releases.
 - It is either a typo on the website side or OpenCV changed it right now.
 - <b>For Linux:</b> You can go with [Install-Opencv](./Install-OpenCV.sh).
