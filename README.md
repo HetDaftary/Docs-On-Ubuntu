@@ -19,7 +19,21 @@ We will see the steps to download and install Ubuntu on a machine.
 - You will need to add the following to the g++ command when compiling the OpenCV code.
 		
 		`pkg-config --libs opencv --cflags opencv`
+
 - Then use <b>CFLAGS for making .o</b> and <b>LDFLAGS for making final executable</b>.
 	
 		CFLAGS = `pkg-config --cflags opencv`
 		LDFLAGS = `pkg-config --libs opencv`
+
+## Install QtCreator in OpenCV
+
+- You firstly need to download the [RUN file](https://www.qt.io/offline-installers) of the installer from the website of Qt. 
+- Then you have to give <b>permissions to it with chmod</b> command so you can execute it.
+- And then go with the following commands.
+
+		sudo apt update
+		sudo apt-get install build-essential libgl1-mesa-dev qtcreator  mesa-common-dev
+	
+- Here, we downloading some essential libraries so we can run Qt.
+- And that's it.
+- You can now use the QtCreator.
