@@ -17,4 +17,7 @@ We will see the steps to download and install Ubuntu on a machine.
 - <b>For Linux:</b> You can go with [Install-Opencv](./Install-OpenCV.sh).
 - It will need sudo permission at times so grant that.
 - You will need to use `pkg-config --libs opencv --cflags opencv` when compiling the OpenCV code.
-- Add `pkg-config --cflags opencv` to the Cflags and `pkg-config --libs opencv` to Ldflags if you are using Makefiles because we need to include to make objects and we need libs while linking the libraries.
+- Then use <b>CFLAGS for making .o</b> and <b>LDFLAGS for making final executable</b>.
+	
+		CFLAGS = `pkg-config --cflags opencv`
+		LDFLAGS = `pkg-config --libs opencv`
