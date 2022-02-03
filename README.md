@@ -32,8 +32,24 @@ We will see the steps to download and install Ubuntu on a machine.
 - And then go with the following commands.
 
 		sudo apt update
-		sudo apt-get install build-essential libgl1-mesa-dev qtcreator  mesa-common-dev
+		sudo apt-get install build-essential libgl1-mesa-dev qtcreator mesa-common-dev
 	
 - Here, we downloading some essential libraries so we can run Qt.
 - And that's it.
 - You can now use the QtCreator.
+
+## Using OpenCV with QtCreator
+
+- Now, you have add the following to the configuration file(.pro file) for the project.
+
+<img src="img/2/Screenshot from 2022-02-03 15-29-06.png">
+
+		unix {
+		    LIBS += `pkg-config --libs opencv`
+    		INCLUDEPATH += `pkg-config --cflags opencv`
+    		DEPENDPATH += `pkg-config --libs opencv`
+		}
+
+<img src="img/2/Screenshot from 2022-02-03 15-36-43.png">
+
+- NOTE: Makefiles are whitespace sensitive so do not leave white spaces.
