@@ -9,12 +9,22 @@ We will see the steps to download and install Ubuntu on a machine.
 2. Through PPA
 3. Through another machine having Ubuntu Linux.
 
-## Install OpenCV in Ubuntu
+## Installing Nvidia Cuda in Ubuntu
 
-- <b>For Windows:</b> You have to see [this website](https://towardsdatascience.com/install-and-configure-opencv-4-2-0-in-windows-10-vc-d132c52063a1)
-- Note that it is OpenCV Website -> Library -> Releases and not Resources -> Releases.
-- It is either a typo on the website side or OpenCV changed it right now.
-- <b>For Linux:</b> You can go with [Install-Opencv](./Install-OpenCV.sh).
+- You can follow this [installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) for the detailed steps
+- You can directly install the Nvidia CUDA in your computer with the [Install-Cuda.sh](./Install-Cuda.sh) script.
+- Just run:
+
+		sudo ./Install-Cuda.sh
+
+## Installing OpenCV in Ubuntu
+
+- You can go with [Install-Opencv](./Install-OpenCV.sh).
+- Just run:
+
+		sudo ./Install-OpenCV.sh
+
+
 - It will need sudo permission at times so grant that.
 - You will need to add the following to the g++ command when compiling the OpenCV code.
 		
@@ -25,7 +35,7 @@ We will see the steps to download and install Ubuntu on a machine.
 		CFLAGS = `pkg-config --cflags opencv`
 		LDFLAGS = `pkg-config --libs opencv`
 
-## Install QtCreator in OpenCV
+## Installing QtCreator in Ubuntu
 
 - You firstly need to download the [RUN file](https://www.qt.io/offline-installers) of the installer from the website of Qt. 
 - Then you have to give <b>permissions to it with chmod</b> command so you can execute it.
