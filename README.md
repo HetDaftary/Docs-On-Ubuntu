@@ -15,7 +15,7 @@ We will see the steps to download and install Ubuntu on a machine.
 - You can directly install the Nvidia CUDA in your computer with the [Install-Cuda.sh](./Install-Cuda.sh) script.
 - Just run:
 
-		sudo ./Install-Cuda.sh
+	sudo ./Install-Cuda.sh
 
 ## Installing OpenCV in Ubuntu
 
@@ -54,11 +54,11 @@ We will see the steps to download and install Ubuntu on a machine.
 
 <img src="img/2/Screenshot from 2022-02-03 15-29-06.png">
 
-		unix {
-		    LIBS += `pkg-config --libs opencv`
-    		INCLUDEPATH += `pkg-config --cflags opencv`
-    		DEPENDPATH += `pkg-config --libs opencv`
-		}
+	unix {
+		LIBS += `pkg-config --libs opencv`  
+		INCLUDEPATH += `pkg-config --cflags opencv`
+		DEPENDPATH += `pkg-config --libs opencv`
+	}
 
 <img src="img/2/Screenshot from 2022-02-03 15-36-43.png">
 
