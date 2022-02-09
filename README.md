@@ -6,8 +6,7 @@ We will see the steps to download and install Ubuntu on a machine.
 ## Ways to install Ubuntu
 
 1. [Through ISO](./Through-Iso.md)
-2. Through PPA
-3. Through another machine having Ubuntu Linux.
+2. Through another machine having Ubuntu Linux.
 
 ## Installing Nvidia Cuda in Ubuntu
 
