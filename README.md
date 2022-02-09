@@ -41,7 +41,7 @@ We will see the steps to download and install Ubuntu on a machine.
 - And then go with the following commands.
 
 		sudo apt update
-		sudo apt-get install build-essential libgl1-mesa-dev qtcreator mesa-common-dev
+		sudo apt-get install build-essential libgl1-mesa-dev mesa-common-dev
 	
 - Here, we downloading some essential libraries so we can run Qt.
 - And that's it.
