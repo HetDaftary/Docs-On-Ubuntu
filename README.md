@@ -8,26 +8,15 @@ We will see the steps to download and install Ubuntu on a machine.
 1. [Through ISO](./Through-Iso.md)
 2. Through another machine having Ubuntu Linux.
 
-## Installing Nvidia Cuda in Ubuntu
+## You can follow this YouTube playlist to install Nvidia Cuda, Cudnn and OpenCV with Nvidia Cuda, Cudnn and Qt.
 
-- You can follow this [installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) for the detailed steps
-- You can directly install the Nvidia CUDA in your computer with the [Install-Cuda.sh](./Install-Cuda.sh) script.
-- Just run:
-
-	sudo ./Install-Cuda.sh
-
-## Installing OpenCV in Ubuntu
-
-- You can go with [Install-Opencv](./Install-OpenCV.sh).
-- Just run:
-
-		sudo ./Install-OpenCV.sh
+[![YouTube playlist](https://img.youtube.com/vi/fyHbV3XhBoM/0.jpg)](https://www.youtube.com/watch?v=fyHbV3XhBoM&list=PLUTbi0GOQwgiflm8LO_Ksk-NieWeuGFQf&index=1)
 
 
 - It will need sudo permission at times so grant that.
 - You will need to add the following to the g++ command when compiling the OpenCV code.
 		
-		`pkg-config --libs opencv --cflags opencv`
+		`pkg-config --libs --cflags opencv`
 
 - Then use <b>CFLAGS for making .o</b> and <b>LDFLAGS for making final executable</b>.
 	
